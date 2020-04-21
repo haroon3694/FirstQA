@@ -106,10 +106,26 @@ html,body
   scroll-behavior: smooth;
 
 }
- 
+
+#aboutus{
+  background-image: url("../img/About_Us_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 880px;
+}
+
+.aboutuscard{
+  width: 120px !important;
+  height: auto !important;
+}
+
+
+
 .desktop-hide{
     display: block !important;
   }
+
+
 
 
 /*mobile screen*/
