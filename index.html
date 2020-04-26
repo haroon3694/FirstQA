@@ -18,6 +18,9 @@
 <script src="js/jquery.mousewheel-3.1.12.js"></script>
 <script src="js/jquery.jcarousellite.js"></script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    
 	<script>
 		$(document).ready(function () {
 		  $(".navbar-nav li a").click(function(event) {
@@ -50,17 +53,17 @@
 			  <a class="nav-link pl-5 pr-5" href="#">Home <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link pl-5 pr-5" href="#services">Services</a>
+			  <a class="nav-link pl-5 pr-5" href="services.html">Services</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link pl-5 pr-5" href="deliverymodel.html">Delivery Model</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link pl-5 pr-5" href="#usecases">Use Cases</a>
+				<a class="nav-link pl-5 pr-5" href="aboutus.html">About Us</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link pl-5 pr-5" href="aboutus.html">About Us</a>
-			  </li>
+				<a class="nav-link pl-5 pr-5" href="news.html">News</a>
+			</li>
 			<li class="nav-item">
 				<a class="nav-link pl-5 pr-5" href="#contact">Contact Us</a>
 			</li>
@@ -92,10 +95,10 @@
 	<div class="container-fluid pt-3">
 		<div class="row justify-content-center">
 			<div class="col-md-2" >
-				<div class="card text-justify" style="width:;">
-					<img class="card-img-top mx-auto img-fluid" style="width: 250px;" src="img/circle.png" alt="Card image cap">
+				<div class="card text-justify" >
+					<img class="card-img-top mx-auto img-fluid" style="width: 250px; height: 215px;" src="img/blockchain.png" alt="Card image cap">
 					<div class="card-body pt-5">
-					<div class="h5 text-center">Digital transformation</div>
+					<div class="h5 text-center font-weight-light">Blockchain</div>
 					<div class="card-text">
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex
 						 ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
@@ -105,10 +108,23 @@
 				</div>
 			</div>
 			<div class="col-md-2" >
-				<div class="card text-justify" >
-					<img class="card-img-top mx-auto img-fluid" style="width: 250px;" src="img/circle.png" alt="Card image cap">
+				<div class="card text-justify">
+					<img class="card-img-top mx-auto img-fluid" style="width: 250px;  height: 215px;" src="img/digital.png" alt="Card image cap">
 					<div class="card-body pt-5">
-					<div class="h5 text-center">Big data</div>
+					<div class="h5 text-center font-weight-light">Digital Transformation</div>
+					<div class="card-text">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex
+						 ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+					</div>
+					<div class="text-center h1"><a href="#" class="btn text-nowrap">+ READ MORE</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2" >
+				<div class="card text-justify">
+					<img class="card-img-top img-fluid mx-auto" style="width: 250px;  height: 215px;" src="img/pms.png" alt="Card image cap">
+					<div class="card-body pt-5">
+					<div class="h5 text-center font-weight-light text-nowrap">Project Management Services</div>
 					<div class="card-text">
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex
 						 ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
@@ -146,19 +162,6 @@
 				</div>
 			</div>
 			-->
-			<div class="col-md-2" >
-				<div class="card text-justify">
-					<img class="card-img-top img-fluid mx-auto" style="width: 250px;" src="img/circle.png" alt="Card image cap">
-					<div class="card-body pt-5">
-					<div class="h5 text-center">Project management</div>
-					<div class="card-text">
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex
-						 ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-					</div>
-					<div class="text-center h1"><a href="#" class="btn text-nowrap">+ READ MORE</a></div>
-					</div>
-				</div>
-			</div>		
 		</div>
 	</div>
 </section>
@@ -233,64 +236,13 @@
 				development practices, such as frequent deliveries, continuous integration, and build, deployment, and tests, reduce risk and rework. Majority of our digital 
 				transformation and blockchain projects follow agile model.
 			</div>
-			<div class="text-center h1 text-nowrap mx-auto pt-3"><a class="btn btn-primary">READ MORE</a></div>
-		
 			  <div class="collapse" id="collapseExample">
-				
 			  </div>
 		
 		</div>
 	</div>
 </section>
 
-<!-- Use cases
-
-<section class="pt-5" id="usecases">
-	<div class="row pt-5">
-		<div class="col-12">
-			<div class="h1 text-center font-weight-light">Use Cases</div>
-		</div>
-	</div>
-	<div class="container pt-5">
-		<div class="row justify-content-center">
-			<div class="col-12">
-				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-					<li class=" col-md-4">
-					  <a class="nav-link grad active h4 text-center" id="pills-bigdata-tab" data-toggle="pill" href="#pills-bigdata" role="tab" aria-controls="pills-bigdata" aria-selected="true">Big data</a>
-					</li>
-					<li class=" col-md-4">
-					  <a class="nav-link grad h4 text-center" id="pills-project-tab" data-toggle="pill" href="#pills-project" role="tab" aria-controls="pills-project" aria-selected="false">Project management</a>
-					</li>
-					<li class=" col-md-4">
-					  <a class="nav-link grad h4 text-center" id="pills-iot-tab" data-toggle="pill" href="#pills-iot" role="tab" aria-controls="pills-iot" aria-selected="false">IoT cases</a>
-					</li>
-				  </ul>
-				 
-			</div>
-		</div>
-		<div class="container" align="center">
-			<div class="row">
-				<div class="col-12">
-					<div class="tab-content" id="pills-tabContent">
-						<div class="tab-pane fade show active" id="pills-bigdata" role="tabpanel" aria-labelledby="pills-bigdata-tab">
-							<img class="img-fluid" src="img/graph.png">
-							<a href="#" class="btn text-nowrap font-weight-bold">CLICK TO KNOW MORE</a>
-						</div>
-						<div class="tab-pane fade" id="pills-project" role="tabpanel" aria-labelledby="pills-project-tab">
-							<img class="img-fluid" src="img/project.jpg">
-							<a href="#" class="btn text-nowrap font-weight-bold">CLICK TO KNOW MORE</a>
-						</div>
-						<div class="tab-pane fade" id="pills-iot" role="tabpanel" aria-labelledby="pills-iot-tab">
-							<img class="img-fluid" src="img/bigdata.jpg">
-							<a href="#" class="btn text-nowrap font-weight-bold">CLICK TO KNOW MORE</a>
-						</div>
-					  </div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
--->
 <!--About US-->
 <section class="pt-5" id="aboutus">
 	<div class="row mb-5 pb-5" style="padding-top: 10%;">
@@ -330,6 +282,49 @@
 		</div>
 	</div>
 </section>
+
+<!--News-->
+<div class="section4 pt-5">
+	<div class="row pt-5 pb-5">
+		<div class="col-12">
+			<div class="h1 text-center font-weight-light">News</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="owl-carousel">
+					<div style="max-width: 400px; padding: 5px;">
+					<a href="img/newsph.png" data-fancybox="gallery" data-caption="Caption #2">
+						<img class="img-fluid" src="img/newsph.png" alt="" />
+					</a>
+					</div>
+					<div style="max-width: 400px; padding: 5px;">
+						<a href="img/newsph.png" data-fancybox="gallery" data-caption="Caption #2">
+							<img class="img-fluid" src="img/newsph.png" alt="" />
+						</a>
+					</div>
+					
+					<div style="max-width: 400px; padding: 5px;">
+						<a href="img/newsph.png" data-fancybox="gallery" data-caption="Caption #2">
+							<img class="img-fluid" src="img/newsph.png" alt="" />
+						</a>
+					</div>
+					<div style="max-width: 400px;padding: 5px;">
+						<a href="img/newsph.png" data-fancybox="gallery" data-caption="Caption #2">
+							<img class="img-fluid" src="img/newsph.png" alt="" />
+						</a>
+					</div>
+					<div style="max-width: 400px; padding: 5px;">
+						<a href="img/newsph.png" data-fancybox="gallery" data-caption="Caption #2">
+							<img class="img-fluid" src="img/newsph.png" alt="" />
+						</a>
+					</div>
+				  </div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!--Contact Us-->
 <section class="pt-5" id="contact">
@@ -456,6 +451,7 @@ $(document).ready(function(){
 	{
     loop:true,
 	margin:10,
+	dots:true,
 	autoplay:true,
     autoplayTimeout:1000,
     autoplayHoverPause:true,
