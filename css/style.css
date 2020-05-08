@@ -74,11 +74,11 @@ input#form_name,#form_email,#form_phone,#form_message{
 }
 
 .grad:hover{
-  background-image: linear-gradient(to right,  #667eea, #764ba2);
+  background-image: linear-gradient(to right,  #613088, #1859A6);
 }
 
 a.btn-primary:hover{
-  background-image: linear-gradient(to right,  #764ba2, #667eea);
+  background-image: linear-gradient(to right,  #613088, #1859A6);
   color: #fff !important;
   border-color: #fff !important;
   border: 1px solid linear-gradient(to right,  #764ba2, #667eea) !important;
@@ -116,7 +116,7 @@ html,body
 
 .aboutuscard{
   width: 110px !important;
-  height: 80px !important;
+  height: auto !important;
 }
 
 
