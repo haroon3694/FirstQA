@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 
 .navbar-dark .navbar-nav .nav-link 
 {
@@ -6,6 +9,22 @@
 
 .nav-item{
   color: black !important;
+  text-transform: uppercase !important;
+  font-size: 12px !important;
+}
+
+.dropdown-item{
+  font-size: 12px !important;
+}
+
+.dropdown-menu{
+  border: none !important;
+  border-radius: 15px !important;
+}
+
+.navbar-brand>img{
+  width: 150px !important;
+  padding-left: 20px !important;
 }
 
 .nav-item:hover:after {
@@ -18,6 +37,16 @@
 
 input#form_name,#form_email,#form_phone,#form_message{
   background-color: #35353720 !important;
+  border-radius: 8px;
+  border: none !important;
+}
+
+input#form_name,#form_email,#form_phone,#form_message.form-control{
+  font-size: 12px !important;
+}
+
+.piechart{
+  width: 50%;
 }
 
 .homeImageLink {
@@ -65,8 +94,11 @@ input#form_name,#form_email,#form_phone,#form_message{
   border: 1px solid black !important;
   background-color: white !important;
   color: black !important;
-  padding: 1% 3% 1% 3% !important;
+  padding: 4% 7% 2% 7% !important;
   text-transform: capitalize !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+  border-radius: 10px !important;
 }
 
 .no-border{
@@ -104,7 +136,11 @@ html,body
   overflow-x:hidden;
   background-color: #ffffff!important;
   scroll-behavior: smooth;
+  
+}
 
+div{
+  font-family: 'Spartan', sans-serif;
 }
 
 #aboutus{
@@ -125,15 +161,22 @@ html,body
     display: block !important;
   }
 
+  #form_message{
+    width: 93% !important;
+  }
 
-
-
+  .dms{
+    width: 25%;
+  }
 /*mobile screen*/
 @media screen and (max-width: 992px) {
   .mobile-hide{
     display: none !important;
   }
 
+  #form_message{
+    width: 100% !important;
+  }
   .navbar{
     background-color: white !important;
   }
@@ -145,4 +188,17 @@ html,body
     text-align: center; 
     width: 100%; 
   }
+
+  .navbar-brand>img{
+    width: 150px !important;
+  }
+
+  .piechart{
+    width: 100%;
+  }
+
+  .dms{
+      width: 100%;
+    }
+  
 }
