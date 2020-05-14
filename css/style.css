@@ -17,9 +17,23 @@
   font-size: 12px !important;
 }
 
+.btn-dark{
+  background-color: black !important;
+  border-radius: 10px !important;
+}
+
+input{
+  font-size: 12px !important;
+}
+
 .dropdown-menu{
   border: none !important;
   border-radius: 15px !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+  margin-top: 0 !important; 
 }
 
 .navbar-brand>img{
@@ -84,10 +98,12 @@ input#form_name,#form_email,#form_phone,#form_message.form-control{
 
 .fixed-top.scrolled {
   background-color: #fff !important;
-  transition: background-color 200ms linear;
+  /*transition: background-color 200ms linear;
   -webkit-box-shadow: 0 8px 6px -6px #999;
   -moz-box-shadow: 0 8px 6px -6px #999;
-  box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;*/
+  border-bottom: 1px solid !important;
+  border-color: linear-gradient(to right,  #613088, #1859A6) !important;
 }
 
 .btn-primary{
@@ -96,7 +112,7 @@ input#form_name,#form_email,#form_phone,#form_message.form-control{
   color: black !important;
   padding: 4% 7% 2% 7% !important;
   text-transform: capitalize !important;
-  font-size: 12px !important;
+  font-size: 14px !important;
   text-transform: uppercase !important;
   border-radius: 10px !important;
 }
@@ -142,12 +158,21 @@ html,body
 div{
   font-family: 'Spartan', sans-serif;
 }
+.aboutus{
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
 
-#aboutus{
+.aboutusimg{
   background-image: url("../img/About_Us_bg.png");
   background-repeat: no-repeat;
   background-position: center;
-  height: 880px;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  
 }
 
 .aboutuscard{
@@ -165,9 +190,7 @@ div{
     width: 93% !important;
   }
 
-  .dms{
-    width: 25%;
-  }
+ 
 /*mobile screen*/
 @media screen and (max-width: 992px) {
   .mobile-hide{
@@ -197,8 +220,5 @@ div{
     width: 100%;
   }
 
-  .dms{
-      width: 100%;
-    }
   
 }

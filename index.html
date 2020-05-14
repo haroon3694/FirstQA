@@ -17,7 +17,7 @@
 <script src="js/jquery.easing-1.3.js"></script>
 <script src="js/jquery.mousewheel-3.1.12.js"></script>
 <script src="js/jquery.jcarousellite.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     
@@ -36,6 +36,19 @@
 					$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 				});
 		});
+	</script>
+
+	<script>
+		window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}
 	</script>
 </head>
 <body>
@@ -82,7 +95,7 @@
 		  <div class="container">
 			  <div class="row homeImageLink">
 				  <div class="col-12 ">
-					<div class="h1 font-weight-light">Do you want to <span class="display-4" style="font-weight: 400;">transform</span> your IT organisation?</div><br>
+					<div class="h1 font-weight-light">Do you want to <span class="display-4" style="font-weight: 500;">transform</span> your IT organisation?</div><br>
 					<div class="font-weight-light" style="font-size: 26px;">we provide consulting led IT services with transformation solutions</div>
 				  </div>
 			  </div>
@@ -91,71 +104,44 @@
 			<script type="text/javascript" src="particles.js"></script>
 			<script type="text/javascript" src="app.js"></script>
 </header>
+
+
 <!--Services-->
 <section class="pt-5 mt-5 pb-5" id="services">
 	<div class="row pt-5 mt-5">
 		<div class="col-12">
-			<div class="h1 pb-5 text-center">Services</div>
+			<div class="h1 text-center font-weight-light">Services</div>
 		</div>
 	</div>
-	<div class="container-fluid pt-3">
+	<div class="container pt-5">
 		<div class="row justify-content-center">
-			<div class="col-md-2" >
+			<div class="col-md-4" >
 				<div class="card text-justify" >
-					<img class="card-img-top mx-auto img-fluid"  src="img/blockchain.png" alt="Card image cap">
+					<img class="card-img-top mx-auto img-fluid" style="max-width: 256px;" src="img/blockchain.png" alt="Card image cap">
 					<div class="card-body">
 					<div class="h5 text-center font-weight-light">Blockchain</div>
 					<div class="text-center pt-2"><a href="services.html#blockchain" class="btn btn-primary font-weight-bold text-nowrap" >+ Read More</a></div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-2" >
+			<div class="col-md-4" >
 				<div class="card text-justify">
-					<img class="card-img-top mx-auto img-fluid"   src="img/digital.png" alt="Card image cap">
+					<img class="card-img-top mx-auto img-fluid" style="max-width: 256px;"  src="img/digital.png" alt="Card image cap">
 					<div class="card-body">
 					<div class="h5 text-center font-weight-light">Digital Transformation</div>
 					<div class="text-center pt-2"><a href="services.html#dt" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-2" >
+			<div class="col-md-4" >
 				<div class="card text-justify">
-					<img class="card-img-top img-fluid mx-auto" src="img/pms.png" alt="Card image cap">
+					<img class="card-img-top img-fluid mx-auto" style="max-width: 256px;" src="img/pms.png" alt="Card image cap">
 					<div class="card-body">
 					<div class="h5 text-center font-weight-light">Project Management</div>
 					<div class="text-center pt-2"><a href="services.html#pms" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
 					</div>
 				</div>
 			</div>
-			<!--
-			<div class="col-md-2" >
-				<div class="card grad bg-light text-justify" style="border-radius: 45px;">
-					<img class="card-img-top img-fluid" src="img/cloud.png" alt="Card image cap">
-					<div class="card-body pt-5">
-					<div class="h5 text-center">Cloud solutions</div>
-					<div class="card-text">
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex
-						 ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-					</div>
-					<div class="text-center h1"><a href="#" class="btn text-nowrap">+ READ MORE</a></div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-md-2" >
-				<div class="card grad bg-light text-justify" style="border-radius: 45px;">
-					<img class="card-img-top img-fluid" src="img/iot.png" alt="Card image cap">
-					<div class="card-body pt-5">
-					<div class="h5 text-center">IOT solutions</div>
-					<div class="card-text">
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex
-						 ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-					</div>
-					<div class="text-center h1"><a href="#" class="btn text-nowrap">+ READ MORE</a></div>
-					</div>
-				</div>
-			</div>
-			-->
 		</div>
 	</div>
 </section>
@@ -178,18 +164,21 @@
 				offshore team members in India to deliver end to end solutions and services. Our projects adopt Waterfall or Agile software development methodology 
 				based on project needs. 
 			</div>
-			  <div class="collapse" id="collapseExample">
-			  </div>
-		
+			<div class="text-center mx-auto pt-4 col-3"><a href="deliverymodel.html" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
 		</div>
 	</div>
 </section>
 
+
+	
+
+
 <!--About US-->
-<section class="pt-5" id="aboutus">
+<section class="pt-5 aboutus"  id="">
+	<div class="aboutusimg lax" data-lax-preset="spin"></div>
 	<div class="row mb-5 pb-5" style="padding-top: 10%;">
 		<div class="col-12">
-			<div class="h1 text-center">About Us</div>
+			<div class="h1 text-center font-weight-light">About Us</div>
 		</div>
 	</div>
 	<div class="container-fluid ">
@@ -298,7 +287,7 @@
 					<div class="card-body">
 					<div class="h4 text-center">UK headquarter</div>
 					<div class="card-text font-weight-light text-center">
-						<h5 class="font-weight-light">UK head office</h5>
+						<h5 class="font-weight-light">London</h5>
 						Level 17, Dashwood House,
 						69 Old Broad Street,
 						London, EC2M 1QS,<br> United Kingdom<br><br>
@@ -349,7 +338,7 @@
 						</div>&nbsp;
 				</div>
 		
-				<div class="row" style="margin-top: -30px;">
+				<div class="row" style="margin-top: -35px;">
 				  <div class="col-md-12" >
 					<div class="form-group">
 					  <label for="form_message"></label>
@@ -358,7 +347,7 @@
 					</div>
 				  </div>
 				  <div class="col-md-12" align="center">
-					<input type="submit" class="btn btn-dark btn-send pl-4 pr-4" value="SUBMIT">
+					<input type="submit" class="btn btn-dark font-weight-bold pl-4 pr-4" value="SUBMIT">
 				  </div>
 				</div>
 			  </div>
@@ -368,6 +357,8 @@
 		</div>
 	 
 </section>
+
+
 
 
 <!-- scroll to top-->
