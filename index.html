@@ -13,6 +13,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/jquery-1.11.1.js"></script>
 <script src="js/jquery.easing-1.3.js"></script>
 <script src="js/jquery.mousewheel-3.1.12.js"></script>
@@ -20,7 +22,9 @@
 <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    
+	
+
+
 	<script>
 		$(document).ready(function () {
 		  $(".navbar-nav li a").click(function(event) {
@@ -52,6 +56,7 @@
 	</script>
 </head>
 <body>
+
 
 	<!--Navigation Bar-->
 	<header class="header" style="position: relative;">
@@ -91,12 +96,12 @@
 		  <a class="navbar-brand mobile-hide" href="#"><img class="img-fluid" style="width: 60px !important;" src="img/flag.png"></a>
 		</div>
 	  </nav>
-	  <div id="particles-js" >
+	  <div id="particles-js">
 		  <div class="container">
 			  <div class="row homeImageLink">
 				  <div class="col-12 ">
-					<div class="h1 font-weight-light">Do you want to <span class="display-4" style="font-weight: 500;">transform</span> your IT organisation?</div><br>
-					<div class="font-weight-light" style="font-size: 26px;">we provide consulting led IT services with transformation solutions</div>
+					<div class="h1 font-weight-light">Do you want to <span class="display-3" style="font-weight: 700; color: #525680;">transform</span> your IT organisation?</div><br>
+					<div class="font-weight-bold weprovide" style="font-size: 26px; color: #525680; font-weight: 600 !important;">We provide consulting led IT services with transformation solutions</div>
 				  </div>
 			  </div>
 		  </div>
@@ -107,38 +112,38 @@
 
 
 <!--Services-->
-<section class="pt-5 mt-5 pb-5" id="services">
-	<div class="row pt-5 mt-5">
+<section  class="pt-5 pb-5 " id="services">
+	<div class="row pt-5">
 		<div class="col-12">
-			<div class="h1 text-center font-weight-light">Services</div>
+			<div data-aos="fade-right" class="h1 text-center font-weight-light">Services</div>
 		</div>
 	</div>
 	<div class="container pt-5">
 		<div class="row justify-content-center">
 			<div class="col-md-4" >
-				<div class="card text-justify" >
+				<div data-aos="fade-down" class="card text-justify" >
 					<img class="card-img-top mx-auto img-fluid" style="max-width: 256px;" src="img/blockchain.png" alt="Card image cap">
 					<div class="card-body">
-					<div class="h5 text-center font-weight-light">Blockchain</div>
-					<div class="text-center pt-2"><a href="services.html#blockchain" class="btn btn-primary font-weight-bold text-nowrap" >+ Read More</a></div>
+					<div class="h5 text-center ">Blockchain</div>
+					<div class="text-center pt-3"><a href="blockchain.html" class="btn btn-primary font-weight-bold text-nowrap" >+ Read More</a></div>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4" >
-				<div class="card text-justify">
+				<div data-aos="fade-up" class="card text-justify">
 					<img class="card-img-top mx-auto img-fluid" style="max-width: 256px;"  src="img/digital.png" alt="Card image cap">
 					<div class="card-body">
-					<div class="h5 text-center font-weight-light">Digital Transformation</div>
-					<div class="text-center pt-2"><a href="services.html#dt" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
+					<div class="h5 text-center ">Digital Transformation</div>
+					<div class="text-center pt-3"><a href="digital.html" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4" >
-				<div class="card text-justify">
+				<div data-aos="fade-down" class="card text-justify">
 					<img class="card-img-top img-fluid mx-auto" style="max-width: 256px;" src="img/pms.png" alt="Card image cap">
 					<div class="card-body">
-					<div class="h5 text-center font-weight-light">Project Management</div>
-					<div class="text-center pt-2"><a href="services.html#pms" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
+					<div class="h5 text-center ">Project Management</div>
+					<div class="text-center pt-3"><a href="project.html" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
 					</div>
 				</div>
 			</div>
@@ -150,21 +155,25 @@
 
 
 <!--Offshore delivery model-->
-<section class="pt-5 mt-5" id="offshore">
-	<div class="row pt-5 mt-5">
-		<div class="col-12">
-			<div class="h1 text-center font-weight-light">Delivery model</div>
+<section class="pt-5" id="offshore">
+	<div class="container">
+		<div class="row pt-5">
+			<div class="col-12">
+				<div data-aos="fade-left" class="h1 text-center font-weight-light">Delivery model</div>
+			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container deliverycontainer">
 		<div class="row">
-			<img class="mx-auto" src="img/dms.png">
-			<div class="col-12 text-justify pt-5">
-				FirstQA Systems follows global delivery model to deliver managed services to our enterprise clients. We leverage our onsite teams in global locations with 
+			<div class="col-12 text-center mx-auto">
+				<img data-aos="fade-up" class="img-fluid mx-auto" src="img/dms.png">
+			</div>
+			<div class="col-12 text-justify pt-5">FirstQA Systems follows global delivery model to deliver managed services to our enterprise clients. We leverage our onsite teams in global locations with 
 				offshore team members in India to deliver end to end solutions and services. Our projects adopt Waterfall or Agile software development methodology 
 				based on project needs. 
+				<div class="text-center mx-auto pt-4 col-5"><a href="deliverymodel.html" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
 			</div>
-			<div class="text-center mx-auto pt-4 col-3"><a href="deliverymodel.html" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
+			
 		</div>
 	</div>
 </section>
@@ -175,16 +184,16 @@
 
 <!--About US-->
 <section class="pt-5 aboutus"  id="">
-	<div class="aboutusimg lax" data-lax-preset="spin"></div>
-	<div class="row mb-5 pb-5" style="padding-top: 10%;">
+	<div class="aboutusimg pt-5 lax" data-lax-preset="spin"></div>
+	<div class="row mb-5 pb-5" style="padding-top: 12%;">
 		<div class="col-12">
-			<div class="h1 text-center font-weight-light">About Us</div>
+			<div class="h1 text-center pt-3 font-weight-light">About Us</div>
 		</div>
 	</div>
 	<div class="container-fluid ">
 		<div class="row justify-content-center">
 			<div class="col-md-2" >
-				<div class="card" style="background-color: transparent !important;">
+				<div data-aos="fade-up" class="card" style="background-color: transparent !important;">
 					<img class="card-img-top aboutuscard mx-auto img-fluid" src="img/overview.png" alt="Card image cap">
 					<div class="card-body text-center">
 					<div class="h5">An Overview</div>
@@ -193,7 +202,7 @@
 				</div>
 			</div>
 			<div class="col-md-2">
-				<div class="card text-center" style="background-color: transparent !important;">
+				<div data-aos="fade-up" class="card text-center" style="background-color: transparent !important;">
 					<img class="card-img-top aboutuscard mx-auto img-fluid"  src="img/ourteam.png" alt="Card image cap">
 					<div class="card-body">
 					<div class="h5">Our Team</div>
@@ -202,7 +211,7 @@
 				</div>
 			</div>
 			<div class="col-md-2">
-				<div class="card text-center" style="background-color: transparent !important;">
+				<div data-aos="fade-up" class="card text-center" style="background-color: transparent !important;">
 					<img class="card-img-top aboutuscard mx-auto img-fluid"  src="img/careers.png" alt="Card image cap">
 					<div class="card-body">
 					<div class="h5">Careers</div>
@@ -215,10 +224,10 @@
 </section>
 
 <!--News-->
-<div class="section4 pt-5">
+<div class="section4 pb-5">
 	<div class="row pt-5 pb-5">
 		<div class="col-12">
-			<div class="h1 text-center">News</div>
+			<div class="h1 font-weight-light text-center">News</div>
 		</div>
 	</div>
 	<div class="container">
@@ -259,40 +268,40 @@
 
 <!--Contact Us-->
 <section class="pt-5" id="contact">
-	<div class="row pt-5 pb-5">
+	<div class="row pt-5">
 		<div class="col-12">
-			<div class="h1 text-center">Contact Us</div>
+			<div class="h1 pt-5 font-weight-light text-center">Contact Us</div>
 		</div>
 	</div>
 	<div class="container">
-		<div class="row pt-5">
-			<div class="col-lg-6 d-flex justify-content-center">
+		<div class="row">
+			<div data-aos="zoom-in" data-aos-duration="3000" class="col-lg-6 d-flex justify-content-center">
 					<div class="card text-justify" style="width: 350px;">
 						<img class="card-img-top mx-auto img-fluid"  src="img/japan.png" alt="Card image cap">
 						<div class="card-body">
 						<div class="h4 text-center">Japan headquarter</div>
 						<div class="card-text font-weight-light text-center">
-							<h5 class="font-weight-light">Yokohoma</h5>
+							<div class="font-weight-bold">Yokohoma</div>
 							2F, Nittochi Yamashitacho Building, 23 Yamashitacho, Naka-Ku, Yokohama 231-0023, Japan<br><br>
 							+81-45-226-4366<br>
-							<a href="mailto:info@firstqa.com" style="color: black !important; padding-top: 10px !important;">info@firstqa.com</a><br><br>
+							<a href="mailto:info@firstqa.com" style="color: #DC1F26 !important; padding-top: 10px !important;">info@firstqa.com</a><br><br>
 							<a href="https://goo.gl/maps/KdJuo1EYgRfdEi8U7" target="_blank" class="btn btn-primary text-nowrap font-weight-bold">VIEW MAP</a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-6 d-flex justify-content-center">
-				<div class="card text-justify" style="width: 350px;">
+				<div data-aos="zoom-in" data-aos-duration="3000" class="card text-justify" style="width: 350px;">
 					<img class="card-img-top mx-auto img-fluid"  src="img/uk.png" alt="Card image cap">
 					<div class="card-body">
-					<div class="h4 text-center">UK headquarter</div>
+					<div class="h4 text-center">UK head office</div>
 					<div class="card-text font-weight-light text-center">
-						<h5 class="font-weight-light">London</h5>
+						<div class="font-weight-bold">London</div>
 						Level 17, Dashwood House,
 						69 Old Broad Street,
 						London, EC2M 1QS,<br> United Kingdom<br><br>
 						+44 (0) 20 7256 4167<br>
-						<a href="mailto:info@firstqa.com" style="color: black !important; padding-top: 10px !important;">info@firstqa.com</a><br><br>
+						<a href="mailto:info@firstqa.com" style="color: #DC1F26; padding-top: 10px !important;">info@firstqa.com</a><br><br>
 						<a href="https://goo.gl/maps/pW8T4Pjz3xNDuvXNA" target="_blank" class="btn btn-primary text-nowrap font-weight-bold">VIEW MAP</a>
 					</div>
 				</div>
@@ -308,8 +317,8 @@
 					<div class="h4 text-center">Feedback</div>
 				</div>
 			</div>
-		  <div class="row justify-content-center">
-			<div class="col-lg-8 col-lg-offset-2">
+		  <div class="row justify-content-center"  style="margin-top: -20px;">
+			
 			  <form id="contact-form" action="mailto:smohammadharoon@gmail.com" method="post" enctype="text/plain" role="form">
 			  <div class="messages"></div>
 			  <div class="controls">
@@ -335,7 +344,7 @@
 							<input id="form_phone" type="text" name="surname" class="form-control" placeholder="Phone No." required="required" data-error="Phone No is required">
 							<div class="help-block with-errors"></div>
 							</div>
-						</div>&nbsp;
+						</div>
 				</div>
 		
 				<div class="row" style="margin-top: -35px;">
@@ -352,7 +361,7 @@
 				</div>
 			  </div>
 			  </form>
-			</div>
+			
 		  </div>
 		</div>
 	 
@@ -412,5 +421,10 @@ $('.stop').on('click',function(){
 });
 
 </script>
+<script>
+	AOS.init({
+		duration : 1200,
+	});
+  </script>
 </body>
 </html>

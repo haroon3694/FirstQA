@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 
 
@@ -7,14 +7,25 @@
     font-size: 18px;
 }
 
+.nav-link 
+{
+    font-size: 14px;
+}
+
 .nav-item{
   color: black !important;
   text-transform: uppercase !important;
   font-size: 12px !important;
 }
 
+.dropdown-toggle::after{
+  color: #BB0053 !important;
+}
+
 .dropdown-item{
   font-size: 12px !important;
+  
+  font-weight: bold !important;
 }
 
 .btn-dark{
@@ -53,15 +64,14 @@ input#form_name,#form_email,#form_phone,#form_message{
   background-color: #35353720 !important;
   border-radius: 8px;
   border: none !important;
+  width: 200px !important;
 }
 
 input#form_name,#form_email,#form_phone,#form_message.form-control{
   font-size: 12px !important;
 }
 
-.piechart{
-  width: 50%;
-}
+
 
 .homeImageLink {
   position: absolute; 
@@ -101,16 +111,16 @@ input#form_name,#form_email,#form_phone,#form_message.form-control{
   /*transition: background-color 200ms linear;
   -webkit-box-shadow: 0 8px 6px -6px #999;
   -moz-box-shadow: 0 8px 6px -6px #999;
-  box-shadow: 0 8px 6px -6px #999;*/
+  box-shadow: 0 8px 6px -6px #999;
   border-bottom: 1px solid !important;
-  border-color: linear-gradient(to right,  #613088, #1859A6) !important;
+  border-color: linear-gradient(to right,  #613088, #1859A6) !important;*/
 }
 
 .btn-primary{
   border: 1px solid black !important;
   background-color: white !important;
   color: black !important;
-  padding: 4% 7% 2% 7% !important;
+  padding: 2% 7% 2% 7% !important;
   text-transform: capitalize !important;
   font-size: 14px !important;
   text-transform: uppercase !important;
@@ -156,7 +166,7 @@ html,body
 }
 
 div{
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .aboutus{
   height: 100vh;
@@ -168,11 +178,15 @@ div{
   background-image: url("../img/About_Us_bg.png");
   background-repeat: no-repeat;
   background-position: center;
-  width: 100vw;
-  height: 100vh;
+  width: 98vw;
+  height: 98vh;
   position: absolute;
   z-index: 0;
   
+}
+
+.weprovide{
+  line-height: 10px !important;
 }
 
 .aboutuscard{
@@ -180,14 +194,19 @@ div{
   height: auto !important;
 }
 
+#form_message{
+  width: 101% !important;
+}
+
+.deliverycontainer{
+  width: 800px !important;
+}
 
 
-.desktop-hide{
-    display: block !important;
-  }
-
-  #form_message{
-    width: 93% !important;
+  @media screen and (min-width: 992px){
+    .desktop-hide{
+      display: none !important;
+    }
   }
 
  
@@ -219,6 +238,22 @@ div{
   .piechart{
     width: 100%;
   }
+  .weprovide{
+    line-height: 30px !important;
+  }
+  .deliverycontainer{
+    width: 350px !important;
+  }
 
+  input#form_name,#form_email,#form_phone,#form_message{
+    background-color: #35353720 !important;
+    border-radius: 8px;
+    border: none !important;
+    width: 100% !important;
+  }
+  
+  input#form_name,#form_email,#form_phone,#form_message.form-control{
+    font-size: 12px !important;
+  }
   
 }
