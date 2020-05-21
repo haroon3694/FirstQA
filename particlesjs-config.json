@@ -1,29 +1,14 @@
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
-
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-*/
-
-/* Otherwise just put the config content (json): */
-
-particlesJS('particles-js',
-  
 {
   "particles": {
     "number": {
       "value": 66,
       "density": {
         "enable": true,
-        "value_area": 700
+        "value_area": 800
       }
     },
     "color": {
-      "value": "#000000"
+      "value": "#ffffff"
     },
     "shape": {
       "type": "circle",
@@ -41,7 +26,7 @@ particlesJS('particles-js',
       }
     },
     "opacity": {
-      "value": 0.1551136363636363,
+      "value": 0.3551136363636363,
       "random": false,
       "anim": {
         "enable": false,
@@ -123,4 +108,3 @@ particlesJS('particles-js',
   },
   "retina_detect": true
 }
-);
