@@ -226,7 +226,7 @@ div{
 
   .homeImageLink {
     position: absolute; 
-    top: 45%; 
+    top: 30%; 
     left: 1.5%;
     text-align: center; 
     width: 100%; 
@@ -237,10 +237,11 @@ div{
   }
 
   .piechart{
-    width: 100%;
+    width: 100% !important;
   }
   .weprovide{
     line-height: 30px !important;
+    font-size: 24px !important;
   }
   .deliverycontainer{
     width: 350px !important;
@@ -251,16 +252,25 @@ div{
     border-radius: 8px;
     border: none !important;
     width: 100% !important;
+    
   }
   
   input#form_name,#form_email,#form_phone,#form_message.form-control{
     font-size: 12px !important;
+  }
+
+  input#form_email,#form_phone{
+    margin-top: -57px !important;
   }
   
   .aboutus{
     height: 120vh;
     overflow: hidden;
     position: relative;
+  }
+
+  .keyfeatures{
+    padding-top: 0px !important;
   }
 
 }
