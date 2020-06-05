@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>First QA-Japanese</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/jquery.easing-1.3.js"></script>
+<script src="js/jquery.mousewheel-3.1.12.js"></script>
+<script src="js/jquery.jcarousellite.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	
+
+
+	<script>
+		$(document).ready(function () {
+		  $(".navbar-nav li a").click(function(event) {
+			$(".navbar-collapse").collapse('hide');
+		  });
+		});
+	</script>
+
+	<script>
+		$(function () {
+			$(document).scroll(function () {
+				var $nav = $(".fixed-top");
+					$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+				});
+		});
+	</script>
+
+	<script>
+		window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}
+	</script>
+
+	<style>
+
+		#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		width: 70px;
+		border: none;
+		outline: none;
+		color: black;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 4px;
+		}
+
+	</style>
+</head>
+<body>
+
+
+	<!--Navigation Bar-->
+	<header class="header" style="position: relative;">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top pt-4">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+		  <a class="navbar-brand" href="index.html"><img src="img/logo.svg"></a>
+		  <ul class="navbar-nav m-auto text-center">
+			<li class="nav-item">
+			  <a class="nav-link font-weight-bold pl-5 pr-5" href="index.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link font-weight-bold pl-5 pr-5 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Services
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="blockchain.html">Blockchain</a>
+				  <a class="dropdown-item" href="digital.html">Digital Transformation</a>
+				  <a class="dropdown-item" href="project.html">Project Management</a>
+				</div>
+			  </li>
+			<li class="nav-item">
+				<a class="nav-link font-weight-bold text-nowrap pl-5 pr-5" href="deliverymodel.html">Delivery Model</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link font-weight-bold text-nowrap pl-5 pr-5" href="aboutus.html">About Us</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link font-weight-bold pl-5 pr-5" href="news.html">News</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link font-weight-bold text-nowrap pl-5 pr-5" href="#contact">Contact Us</a>
+			</li>
+		  </ul>
+		  <a class="navbar-brand  mobile-hide" href="../index.html"><img class="img-fluid" style="width: 100% !important;" src="img/flags_AMERICAN.jpg"></a>
+		</div>
+	  </nav>
+	  <div id="particles-js">
+		  <div class="container">
+			  <div class="row homeImageLink">
+				  <div class="col-md-12 ">
+					<div class="h1 font-weight-light">Do you want to <span class="display-3" style="font-weight: 700; color: #525680;">transform</span> your organisation?</div><br>
+					<div class="font-weight-bold weprovide" style="font-size: 26px; color: #525680; font-weight: 600 !important;">We provide consulting led services with transformation solutions</div>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+			<script type="text/javascript" src="particles.js"></script>
+			<script type="text/javascript" src="app.js"></script>
+</header>
+
+
+<!--Services-->
+<section  class="pt-5 pb-5 " id="services">
+	<div class="row pt-5">
+		<div class="col-12">
+			<div data-aos="fade-right" class="h1 text-center font-weight-light">Services</div>
+		</div>
+	</div>
+	<div class="container pt-5">
+		<div class="row justify-content-center">
+			<div class="col-md-4" >
+				<div data-aos="fade-down" class="card text-justify" >
+					<img class="card-img-top mx-auto img-fluid" style="max-width: 200px;" src="img/blockchain.png" alt="BlockChain Image">
+					<div class="card-body">
+					<div class="h5 text-center ">Blockchain</div>
+					<div class="text-center pt-3"><a href="blockchain.html" class="btn btn-primary font-weight-bold text-nowrap" >+ Read More</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4" >
+				<div data-aos="fade-up" class="card text-justify">
+					<img class="card-img-top mx-auto img-fluid" style="max-width: 200px;"  src="img/digital.png" alt="Card image cap">
+					<div class="card-body">
+					<div class="h5 text-center ">Digital Transformation</div>
+					<div class="text-center pt-3"><a href="digital.html" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4" >
+				<div data-aos="fade-down" class="card text-justify">
+					<img class="card-img-top img-fluid mx-auto" style="max-width: 200px;" src="img/pms.png" alt="Card image cap">
+					<div class="card-body">
+					<div class="h5 text-center ">Project Management</div>
+					<div class="text-center pt-3"><a href="project.html" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+<!--Offshore delivery model-->
+<section class="pt-5" id="offshore">
+	<div class="container">
+		<div class="row pt-5">
+			<div class="col-12">
+				<div data-aos="fade-left" class="h1 text-center font-weight-light">Delivery model</div>
+			</div>
+		</div>
+	</div>
+	<div class="container deliverycontainer">
+		<div class="row">
+			<div class="col-12 text-center mx-auto">
+				<img data-aos="fade-up" class="img-fluid mx-auto" style="max-width: 218px;" src="img/deliverymodel.png">
+			</div>
+			<div class="col-12 text-justify pt-5">FirstQA Systems follows global delivery model to deliver managed services to our enterprise clients. We leverage our onsite teams in global locations with 
+				offshore team members in India to deliver end to end solutions and services. Our projects adopt Waterfall or Agile software development methodology 
+				based on project needs. 
+				<div class="text-center mx-auto pt-4 col-5"><a href="deliverymodel.html" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+
+	
+
+
+<!--About US-->
+<section class="pt-5 aboutus"  id="">
+	<div class="aboutusimg pt-5 lax" data-lax-preset="spin"></div>
+	<div class="row mb-5 pb-5" style="padding-top: 12%;">
+		<div class="col-12">
+			<div class="h1 text-center pt-3 font-weight-light">About Us</div>
+		</div>
+	</div>
+	<div class="container-fluid ">
+		<div class="row justify-content-center">
+			<div class="col-md-2" >
+				<div data-aos="fade-up" class="card" style="background-color: transparent !important;">
+					<img class="card-img-top aboutuscard mx-auto img-fluid" style="max-width: 132px;" src="img/overview.png" alt="Card image cap">
+					<div class="card-body text-center">
+					<div class="h5">An Overview</div>
+					<div class="text-center pt-4"><a href="aboutus.html#overview" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div data-aos="fade-up" class="card text-center" style="background-color: transparent !important;">
+					<img class="card-img-top aboutuscard mx-auto img-fluid" style="max-width: 132px;" src="img/team.png" alt="Card image cap">
+					<div class="card-body">
+					<div class="h5">Our Team</div>
+					<div class="text-center pt-4"><a href="aboutus.html#team" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div data-aos="fade-up" class="card text-center" style="background-color: transparent !important;">
+					<img class="card-img-top aboutuscard mx-auto img-fluid" style="max-width: 132px;" src="img/careers.png" alt="Card image cap">
+					<div class="card-body">
+					<div class="h5">Careers</div>
+					<div class="text-center pt-4"><a href="aboutus.html#careers" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--News
+<div class="section4 pb-5">
+	<div class="row pt-5 pb-5">
+		<div class="col-12">
+			<div class="h1 font-weight-light text-center">News</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="owl-carousel">
+					<div style="max-width: 400px; padding: 5px;">
+					<a href="img/newsph.png" data-fancybox="gallery" data-caption="Caption #2">
+						<img class="img-fluid" src="img/newsph.png" alt="" />
+					</a>
+					</div>
+					<div style="max-width: 400px; padding: 5px;">
+						<a href="img/newsph.png" data-fancybox="gallery" data-caption="Caption #2">
+							<img class="img-fluid" src="img/newsph.png" alt="" />
+						</a>
+					</div>
+					
+					<div style="max-width: 400px; padding: 5px;">
+						<a href="img/newsph.png" data-fancybox="gallery" data-caption="Caption #2">
+							<img class="img-fluid" src="img/newsph.png" alt="" />
+						</a>
+					</div>
+					<div style="max-width: 400px;padding: 5px;">
+						<a href="img/newsph.png" data-fancybox="gallery" data-caption="Caption #2">
+							<img class="img-fluid" src="img/newsph.png" alt="" />
+						</a>
+					</div>
+					<div style="max-width: 400px; padding: 5px;">
+						<a href="img/newsph.png" data-fancybox="gallery" data-caption="Caption #2">
+							<img class="img-fluid" src="img/newsph.png" alt="" />
+						</a>
+					</div>
+				  </div>
+			</div>
+		</div>
+	</div>
+</div>
+-->
+<!--Contact Us-->
+<section class="pt-5" id="contact">
+	<div class="row pt-5">
+		<div class="col-12">
+			<div class="h1 pt-5 font-weight-light text-center">Contact Us</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div data-aos="zoom-in" data-aos-duration="1500" class="col-lg-6 d-flex justify-content-center">
+					<div class="card text-justify" style="width: 350px;">
+						<img class="card-img-top mx-auto img-fluid"  src="img/japan.png" alt="Card image cap">
+						<div class="card-body">
+						<div class="h4 text-center">Japan headquarter</div>
+						<div class="card-text font-weight-light text-center">
+							<div class="font-weight-bold">Yokohoma</div>
+							2F, Nittochi Yamashitacho Building, 23 Yamashitacho, Naka-Ku, Yokohama 231-0023, Japan<br><br>
+							+81-45-226-4366<br>
+							<a href="mailto:info@firstqa.com" style="color: #DC1F26 !important; padding-top: 10px !important;">info@firstqa.com</a><br><br>
+							<a href="https://goo.gl/maps/KdJuo1EYgRfdEi8U7" target="_blank" class="btn btn-primary text-nowrap font-weight-bold">VIEW MAP</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 d-flex justify-content-center">
+				<div data-aos="zoom-in" data-aos-duration="1500" class="card text-justify" style="width: 350px;">
+					<img class="card-img-top mx-auto img-fluid"  src="img/uk.png" alt="Card image cap">
+					<div class="card-body">
+					<div class="h4 text-center">UK head office</div>
+					<div class="card-text font-weight-light text-center">
+						<div class="font-weight-bold">London</div>
+						Level 17, Dashwood House,
+						69 Old Broad Street,
+						London, EC2M 1QS,<br> United Kingdom<br><br>
+						+44 (0) 20 7256 4167<br>
+						<a href="mailto:info@firstqa.com" style="color: #DC1F26; padding-top: 10px !important;">info@firstqa.com</a><br><br>
+						<a href="https://goo.gl/maps/pW8T4Pjz3xNDuvXNA" target="_blank" class="btn btn-primary text-nowrap font-weight-bold">VIEW MAP</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	
+		<div class="container pt-5 pb-5">
+			<div class="row pt-5">
+				<div class="col-12">
+					<div class="h4 text-center">Feedback</div>
+				</div>
+			</div>
+		  <div class="row justify-content-center"  style="margin-top: -20px;">
+			
+			  <form id="contact-form" action="mailto:smohammadharoon@gmail.com" method="post" enctype="text/plain" role="form">
+			  <div class="messages"></div>
+			  <div class="controls">
+				<div class="row no-gutters">
+						<div class="col-md-4">
+							<div class="form-group">
+							<label for="form_name"></label>
+							<input id="form_name" type="text" name="name" class="form-control" placeholder="Name" required="required" data-error="Name is required.">
+							<div class="help-block with-errors"></div>
+							</div>
+						</div> &nbsp;
+						<div class="col-md-4">
+							<div class="form-group">
+							<label for="form_email"></label>
+							<input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="Valid email is required.">
+							
+							<div class="help-block with-errors"></div>
+							</div>
+						</div>&nbsp;
+						<div class="col-md-3">
+							<div class="form-group">
+							<label for="form_phone"></label>
+							<input id="form_phone" type="text" name="surname" class="form-control" placeholder="Phone No." required="required" data-error="Phone No is required">
+							<div class="help-block with-errors"></div>
+							</div>
+						</div>
+				</div>
+		
+				<div class="row" style="margin-top: -35px;">
+				  <div class="col-md-12" >
+					<div class="form-group">
+					  <label for="form_message"></label>
+					  <textarea  id="form_message" name="message" class="form-control" placeholder="Type your message here" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+					  <div class="help-block with-errors"></div>
+					</div>
+				  </div>
+				  <div class="col-md-12" align="center">
+					<input type="submit" class="btn btn-dark font-weight-bold pl-4 pr-4" value="SUBMIT">
+				  </div>
+				</div>
+			  </div>
+			  </form>
+		  </div>
+		</div>
+	 
+</section>
+
+<div class="btn btn-sm" onclick="topFunction()" id="myBtn" title="Go to top"><img class="img-fluid" src="img/top.svg"></div>
+
+
+<!-- scroll to top-->
+<div class="mobile-hide">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+</div>
+
+
+<script src="owl.carousel.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel(
+	{
+    loop:true,
+	margin:10,
+	dots:true,
+	autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+           
+        },
+        
+        1000:{
+            items:3,
+			loop:false
+        }
+    }
+}
+  );
+  $('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+});
+
+</script>
+<script>
+	AOS.init({
+		duration : 1200,
+	});
+  </script>
+</body>
+</html>
