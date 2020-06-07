@@ -82,6 +82,11 @@ input#form_name,#form_email,#form_phone,#form_message.form-control{
   border: none !important;
 }
 
+.lang:hover{
+  color: #fff !important;
+  background-color: #BF2342 !important;
+}
+
 .nav-pills{
   color: black !important;
   

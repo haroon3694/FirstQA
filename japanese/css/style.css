@@ -2,10 +2,12 @@
 
 
 
-.navbar-dark .navbar-nav .nav-link 
-{
-   
+.lang:hover{
+  color: #fff !important;
+  background-color: #BF2342 !important;
 }
+
+
 
 .nav-link 
 {
