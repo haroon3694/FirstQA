@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+.dtimage:hover{
+opacity: 1;
+}
+
+.dtimage{
+  opacity: 0.8;
+  }
+
+  .dtimage1{
+    opacity: 0.8;
+    }
+
+
+.dtimage1:hover{
+ opacity: 1;
+  }
+
+  
+
+.nav-link 
+{
+    font-size: 80% !important;
+}
+
+.nav-item{
+  color: black !important;
+  text-transform: uppercase !important;
+}
+
+.dropdown-toggle::after{
+  color: #BB0053 !important;
+}
+
+.dropdown-item{
+  font-size: 12px !important;
+  font-weight: bold !important;
+}
+
+.btn-dark{
+  background-color: black !important;
+  border-radius: 10px !important;
+}
+
+input{
+  font-size: 12px !important;
+}
+
+.dropdown-menu{
+  border: none !important;
+  border-radius: 15px !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+  margin-top: 0 !important; 
+}
+
+.navbar-brand>img{
+  width: 150px !important;
+  padding-left: 20px !important;
+}
+
+.nav-item:hover:after {
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 50%; /* Change this to whatever width you want. */
+  border-bottom: 2px solid red; /* This creates the border. Replace black with whatever color you want. */
+}
+
+input#form_name,#form_email,#form_phone,#form_message{
+  background-color: #35353720 !important;
+  border-radius: 8px;
+  border: none !important;
+  width: 200px !important;
+}
+
+input#form_name,#form_email,#form_phone,#form_message.form-control{
+  font-size: 12px !important;
+}
+
+
+
+.homeImageLink {
+  position: absolute; 
+  top: 45%; 
+  left: 0;
+  text-align: center; 
+  width: 100%; 
+}
+.card{
+  border: none !important;
+}
+
+.lang:hover{
+  color: #fff !important;
+  background-color: #BF2342 !important;
+}
+
+
+.nav-pills{
+  color: black !important;
+  
+}
+
+#pills-bigdata-tab,#pills-project-tab,#pills-iot-tab{
+  background-color: #fff !important;
+  color: black !important;
+}
+
+#pills-iot-tab:hover{
+  color: #fff !important;
+}
+
+#pills-project-tab:hover{
+  color: #fff !important;
+}
+
+#pills-bigdata-tab:hover{
+  color: #fff !important;
+}
+
+.fixed-top.scrolled {
+  background-color: #fff !important;
+  /*transition: background-color 200ms linear;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+  border-bottom: 1px solid !important;
+  border-color: linear-gradient(to right,  #613088, #1859A6) !important;*/
+}
+
+.btn-primary{
+  border: 1px solid black !important;
+  background-color: white !important;
+  color: black !important;
+  padding: 2% 7% 2% 7% !important;
+  text-transform: capitalize !important;
+  font-size: 14px !important;
+  text-transform: uppercase !important;
+  border-radius: 10px !important;
+}
+
+.no-border{
+  border: none !important;
+}
+
+.grad:hover{
+  background-image: linear-gradient(to right,  #613088, #1859A6);
+}
+
+a.btn-primary:hover{
+  background-image: linear-gradient(to right,  #613088, #1859A6);
+  color: #fff !important;
+  border-color: #fff !important;
+  border: 1px solid linear-gradient(to right,  #764ba2, #667eea) !important;
+}
+
+#particles-js{
+  height: 100vh;
+  background: #ffffff40;
+  width: 100% !important;
+}
+
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+html,body
+{
+  max-width:100%;
+  overflow-x:hidden;
+  background-color: #ffffff!important;
+  scroll-behavior: smooth;
+  
+}
+
+div{
+  font-family: 'Open Sans', sans-serif;
+}
+.aboutus{
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.aboutusimg{
+  background-image: url("../img/About_Us_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 98vw;
+  height: 98vh;
+  position: absolute;
+  z-index: 0;
+  
+}
+
+.weprovide{
+  line-height: 10px !important;
+}
+
+.aboutuscard{
+  width: 110px !important;
+  height: auto !important;
+}
+
+#form_message{
+  width: 101% !important;
+}
+
+.deliverycontainer{
+  width: 800px !important;
+}
+
+.piechart{
+  width: 50%  !important;
+}
+
+  @media screen and (min-width: 992px){
+    .desktop-hide{
+      display: none !important;
+    }
+  }
+
+ 
+/*mobile screen*/
+@media screen and (max-width: 992px) {
+  .mobile-hide{
+    display: none !important;
+  }
+
+  #form_message{
+    width: 100% !important;
+  }
+  .navbar{
+    background-color: white !important;
+  }
+
+  .homeImageLink {
+    position: absolute; 
+    top: 30%; 
+    left: 1.5%;
+    text-align: center; 
+    width: 100%; 
+  }
+
+  .brand>img{
+    width: 150px !important;
+    position: absolute !important;
+    top: 10% !important;
+    left: 25%;
+    text-align: center;
+    
+  }
+
+  .piechart{
+    width: 100% !important;
+  }
+  .weprovide{
+    line-height: 30px !important;
+    font-size: 24px !important;
+  }
+  .deliverycontainer{
+    width: 350px !important;
+  }
+
+  input#form_name,#form_email,#form_phone,#form_message{
+    background-color: #35353720 !important;
+    border-radius: 8px;
+    border: none !important;
+    width: 100% !important;
+    
+  }
+  
+  input#form_name,#form_email,#form_phone,#form_message.form-control{
+    font-size: 12px !important;
+  }
+
+  input#form_email,#form_phone{
+    margin-top: -57px !important;
+  }
+  
+  .aboutus{
+    height: 120vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .keyfeatures{
+    padding-top: 0px !important;
+  }
+
+}
+

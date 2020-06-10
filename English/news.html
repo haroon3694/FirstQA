@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>First QA</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/jquery.easing-1.3.js"></script>
+<script src="js/jquery.mousewheel-3.1.12.js"></script>
+<script src="js/jquery.jcarousellite.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	
+
+
+	<script>
+		$(document).ready(function () {
+		  $(".navbar-nav li a").click(function(event) {
+			$(".navbar-collapse").collapse('hide');
+		  });
+		});
+	</script>
+
+	<script>
+		$(function () {
+			$(document).scroll(function () {
+				var $nav = $(".fixed-top");
+					$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+				});
+		});
+	</script>
+
+	<script>
+		window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}
+	</script>
+
+	<style>
+
+		#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		width: 70px;
+		border: none;
+		outline: none;
+		color: black;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 4px;
+		}
+
+	</style>
+</head>
+<body>
+
+
+	<!--Navigation Bar-->
+	<header class="header" style="position: relative;">
+		<nav class="navbar navbar-expand-xl navbar-light fixed-top pt-4">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			  <a class="navbar-brand brand" href="index.html"><img src="img/logo.svg"></a>
+			  <ul class="navbar-nav m-auto text-center">
+				<li class="nav-item">
+				  <a class="nav-link font-weight-bold pl-5 pr-5" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link font-weight-bold pl-5 pr-5 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Services
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" href="blockchain.html">Blockchain</a>
+					  <a class="dropdown-item" href="digital.html">Digital Transformation</a>
+					  <a class="dropdown-item" href="project.html">Project Management</a>
+					</div>
+				  </li>
+				<li class="nav-item">
+					<a class="nav-link font-weight-bold text-nowrap pl-5 pr-5" href="deliverymodel.html">Delivery Model</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link font-weight-bold text-nowrap pl-5 pr-5" href="aboutus.html">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link font-weight-bold pl-5 pr-5" href="news.html">News</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link font-weight-bold text-nowrap pl-5 pr-5 pr-md-0 pr-xl-5" href="index.html#contact">Contact Us</a>
+				</li>
+			  </ul>
+			  <a title="Switch to Japanese" class="navbar-brand" href="../index.html"><img class="img-fluid" style="width: 70px !important;" src="img/flag_JAPAN.png"></a>
+			</div>
+		  </nav>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="h1 display-1  pt-5 mt-5 mx-auto"><img class="img-fluid" src="img/News_COMINGSOON.jpg"> </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="btn btn-sm" onclick="topFunction()" id="myBtn" title="Go to top"><img class="img-fluid" src="img/top.svg"></div>
+
+
+<!-- scroll to top-->
+<div class="mobile-hide">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+</div>
+
+
+<script src="owl.carousel.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel(
+	{
+    loop:true,
+	margin:10,
+	dots:true,
+	autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+           
+        },
+        
+        1000:{
+            items:3,
+			loop:false
+        }
+    }
+}
+  );
+  $('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+});
+
+</script>
+<script>
+	AOS.init({
+		duration : 1200,
+	});
+  </script>
+</body>
+</html>

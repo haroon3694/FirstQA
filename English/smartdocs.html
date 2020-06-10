@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>First QA</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/jquery.easing-1.3.js"></script>
+<script src="js/jquery.mousewheel-3.1.12.js"></script>
+<script src="js/jquery.jcarousellite.js"></script>
+
+	<script>
+		$(document).ready(function () {
+		  $(".navbar-nav li a").click(function(event) {
+			$(".navbar-collapse").collapse('hide');
+		  });
+		});
+    </script>
+    <script>
+		$(function () {
+			$(document).scroll(function () {
+				var $nav = $(".fixed-top");
+					$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+				});
+		});
+	</script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top pt-4">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+		  <a class="navbar-brand brand" href="index.html"><img src="img/logo.svg"></a>
+		  <ul class="navbar-nav m-auto text-center">
+			<li class="nav-item">
+			  <a class="nav-link font-weight-bold pl-5 pr-5" href="index.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link font-weight-bold pl-5 pr-5 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Services
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="blockchain.html">Blockchain</a>
+				  <a class="dropdown-item" href="digital.html">Digital Transformation</a>
+				  <a class="dropdown-item" href="project.html">Project Management</a>
+				</div>
+			  </li>
+			<li class="nav-item">
+				<a class="nav-link font-weight-bold text-nowrap pl-5 pr-5" href="deliverymodel.html">Delivery Model</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link font-weight-bold text-nowrap pl-5 pr-5" href="aboutus.html">About Us</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link font-weight-bold pl-5 pr-5" href="news.html">News</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link font-weight-bold text-nowrap pl-5 pr-5 pr-md-0 pr-xl-5" href="index.html#contact">Contact Us</a>
+			</li>
+		  </ul>
+		  <a title="Switch to Japanese" class="navbar-brand" href="../index.html"><img class="img-fluid" style="width: 70px !important;" src="img/flag_JAPAN.png"></a>
+		</div>
+	  </nav>
+
+
+<section id="servicenow" class="pt-5">
+
+    <div class="container">
+    <!--Smart Docs-->
+    <div id="smartdocs" class="col-12 text-center pt-5 mt-5">
+        <img class="img-fluid" width="270px" src="img/services_dt_smartdocs.png">
+        <div class="text-justify pt-5">
+            In today’s age of digital disruptions, global companies need to constantly embrace change to keep pace with the complex, 
+            volatile and ever-evolving business landscape. Success in the digital age depends on transformative thinking and having the right 
+            set of platforms to quickly convert these thoughts to action.<br><br>
+
+            SmartDocs is our leading solution to “enable digital transformation” in your organization. It extends a 
+            plethora of features to organizations for efficient management of enterprise content as well as automate business processes and workflows.<br><br>
+
+            It helps companies with content management using workflows, audit and compliance, internal and external stakeholder collaboration. 
+            It provides powerful 256-bit AES encryption, multi-language support, multi-device accessibility for users and supports SaaS,
+             on-premises as well as hybrid installations.<br><br>
+        </div>
+        <div class="col-12 text-center">
+            <div class="h5 font-weight-bold">Key Security Features​</div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-6 col-md-2" >
+                <div class="card text-justify" >
+                        <img class="card-img-top mx-auto img-fluid" style="width: 65px" src="img/services_dt_smartdocs_KSF_content.png" alt="Card image cap">
+                        <div class="card-body keyfeatures">
+                        <div class="text-center">Content Encryption</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2" >
+                <div class="card text-justify" >
+                        <img class="card-img-top mx-auto img-fluid" style="width: 65px" src="img/services_dt_smartdocs_KSF_device.png" alt="Card image cap">
+                        <div class="card-body keyfeatures">
+                        <div class="text-center ">Device Encryption</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2" >
+                <div class="card text-justify" >
+                        <img class="card-img-top mx-auto img-fluid" style="width: 65px" src="img/services_dt_smartdocs_KSF_secure.png" alt="Card image cap">
+                        <div class="card-body keyfeatures">
+                        <div class=" text-center ">Secure Achitecture</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2" >
+                <div class="card text-justify" >
+                        <img class="card-img-top mx-auto img-fluid" style="width: 65px" src="img/services_dt_smartdocs_KSF_ip.png" alt="Card image cap">
+                        <div class="card-body keyfeatures">
+                        <div class="text-center ">IP Whitelisting</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2" >
+                <div class="card text-justify" >
+                        <img class="card-img-top mx-auto img-fluid" style="width: 65px" src="img/services_dt_smartdocs_KSF_permissions.png" alt="Card image cap">
+                        <div class="card-body keyfeatures">
+                        <div class="text-center ">Permissions</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2" >
+                <div class="card text-justify" >
+                        <img class="card-img-top mx-auto img-fluid" style="width: 65px" src="img/services_dt_smartdocs_KSF_logs.png" alt="Card image cap">
+                        <div class="card-body keyfeatures">
+                        <div class="text-center ">Detailed logs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-justify pt-3 pb-5">
+                <div>
+                    SmartDocs has a powerful workflow engine for rapid development and deployment of workflow-based enterprise applications. Leverage the power of SmartDocs Application Framework and the Workflow and Content Repository layers in the backend, to build easy-to-use, secure and scalable enterprise applications using the low-code features of the platform.
+                    <br><br>
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <div class="h5 pt-5 font-weight-bold">Build Enterprise Applications on SmartDocs​</div>
+                            <div class="pt-2">Rapid Development of Custom Applications through SmartDocs™ Application Framework​​</div>
+                            <img class="img-fluid mobile-hide pt-5" src="img/firstQA_BEA.svg">
+                            <div class="desktop-hide pt-3 font-weight-bold"><a class="" href="img/services_dt_EA_smartdocs_enterpriseimage(mobile).jpg" target="_blank">Click to view Enterprise Application</a></div>
+                        </div>
+                    </div>
+                    Our SmartDocs implementation team brings rich expertise and proven methodologies to our client portfolio with B2B secured collaboration, process automation and workflows with low-code model.
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  
+</section>
+</body>
+
+</html>
+
