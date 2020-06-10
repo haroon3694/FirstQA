@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>First QA</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/jquery.easing-1.3.js"></script>
+<script src="js/jquery.mousewheel-3.1.12.js"></script>
+<script src="js/jquery.jcarousellite.js"></script>
+
+	<script>
+		$(document).ready(function () {
+		  $(".navbar-nav li a").click(function(event) {
+			$(".navbar-collapse").collapse('hide');
+		  });
+		});
+    </script>
+    <script>
+		$(function () {
+			$(document).scroll(function () {
+				var $nav = $(".fixed-top");
+					$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+				});
+		});
+	</script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top pt-4">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand brand" href="index.html"><img src="img/logo.svg"></a>
+      <ul class="navbar-nav m-auto text-center">
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold pl-4 pr-4" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link font-weight-bold pl-4 pr-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="blockchain.html">Blockchain</a>
+          <a class="dropdown-item" href="digital.html">Digital Transformation</a>
+          <a class="dropdown-item" href="project.html">Project Management</a>
+        </div>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold text-nowrap pl-4 pr-4" href="deliverymodel.html">Delivery Model</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold text-nowrap pl-4 pr-4" href="aboutus.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold pl-4 pr-4" href="news.html">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold text-nowrap pl-4 pr-4 pr-md-0 pr-xl-4" href="index.html#contact">Contact Us</a>
+      </li>
+      </ul>
+      <a title="Switch to Japanese" class="navbar-brand" href="../index.html"><img class="img-fluid" style="width: 70px !important;" src="img/flag_JAPAN.png"></a>
+    </div>
+    </nav>
+
+<!--overview-->
+<section id="overview" class="pt-5">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="h1 text-center font-weight-light pt-5">About Us</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-5" >
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img class="img-fluid" style="max-width: 76px;" src="img/overview.png">
+                <div class="h3 pt-2">An Overview</div>
+                <div class="text-justify pt-3 col-md-12">
+                    <img class="card-img-top mx-auto img-fluid p-5" style="float: left; width: 310px; " src="img/aboutus_main.png" alt="Card image cap">
+                    FirstQA Systems is a Japan Headquartered Consulting and IT Services organization with transformation solutions in today’s connected 
+                    world. At FirstQA Systems, we firmly believe that cloud technologies and partnership based collaborative working model with our 
+                    clients are fundamental to the success of major transformation initiatives.
+                    <br><br>
+                    Our solutions and services are centric around Blockchain, 
+                    Digital Transformation and Project Management Services.
+                    <br><br>
+                    We assist and enable our enterprise clients explore every aspect of 
+                    blockchain and implement Dapps (Distributed Apps) designed to deliver value. Through architecture, design, and development, we 
+                    serve our clients in their quest for innovative blockchain solutions that address real business challenges. Digital transformation is not just 
+                    about disruption or technology. It’s about value, people, optimization and the capability to rapidly adapt when such is needed through 
+                    an intelligent use of technologies and information. We leverage enterprise cloud platforms of ServiceNow, SmartDocs and Salesforce as 
+                    building blocks in architecting, solutioning and implementing digital transformation solutions. 
+                    <br><br>
+                    Our  Project Management Service as a 
+                    governance service enable us to manage large and complex solutions projects based on proven project management framework and 
+                    methodology by leveraging PMBOK, ITIL and CoBIT. Our governance service augment in- house capability of our clients to ensure they 
+                    are able to put in place the controls and measurements needed to make projects successful.
+                    <br><br>
+                    FirstQA Systems’ Consulting and Technology teams engage with our enterprise clients in a collaborative model to enhance and supplement the varying technology 
+                    needs in a rapidly changing business and regulatory compliance landscape. Industry proven methodologies and frameworks are 
+                    leveraged to drive consistency and standardization.
+                    <br><br>
+                    Our approach is to work in close partnership, understand your business to offer 
+                    solutions that are relevant to you and align our way of functioning that enables your success. 
+                    <br><br>
+                    We know, you have a choice of service 
+                    providers for the needs of your IT organization. However, by engaging FirstQA Systems, we can assure you of the success of your 
+                    transformation initiatives through unique blend of our focus on nurturing long term relationship, our consulting led technology expertise 
+                    and our uncompromising commitment to service excellence.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--our team-->
+    <div id="team" class="container pt-5 mt-5">
+        <div class="row pt-5">
+            <div class="col-12 text-center">
+                <img class="img-fluid" style="max-width: 76px" src="img/team.png">
+                <div class="h3 pt-2">Our Team</div>
+                    <div class="row pt-5">
+                        <div class="col-lg-6 d-flex justify-content-center">
+                                <div class="card text-justify" >
+                                    <img class="card-img-top mx-auto img-fluid" style="width: 250px;" src="img/Team_Naveen.png" alt="Card image cap">
+                                    <div class="card-body">
+                                    <div class="h4 text-center font-weight-bold">Naveen MV</div>
+                                        <div class="text-center h5">Managing Partner & Director</div>
+                                    <div class="card-text pt-1  text-justify">
+                                        As Managing Partner and Director at FirstQA Systems K.K.,
+                                        Naveen is responsible for overseeing the strategic direction...
+                                        <div class="text-center mx-auto col-6 pt-4"><a data-toggle="modal" data-target="#naveen" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-center">
+                            <div class="card text-justify">
+                                <img class="card-img-top mx-auto img-fluid" style="width: 250px;" src="img/Team_Kimitoshi.png" alt="Card image cap">
+                                <div class="card-body">
+                                <div class="h4 text-center font-weight-bold">Kimitoshi Ishii</div>
+                                   <div class="text-center h5"> Director, Regional Head – EMEA</div>
+                                <div class="card-text  text-justify pt-1">
+                                  As Regional Director for our European operations, Kimitoshi Ishii is responsible to deliver digital transformation and blockchain....
+                                    <div class="text-center  mx-auto col-6 pt-4"><a data-toggle="modal" data-target="#Katsuyuki_Kakuta" class="btn btn-primary font-weight-bold text-nowrap">+ Read More</a></div>
+                                </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="modal fade" id="naveen" tabindex="-1" role="dialog" aria-labelledby="naveen" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title font-weight-bold h4" id="exampleModalLongTitle">Naveen MV</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-justify">
+                    <b>As Managing Partner and Director at FirstQA Systems K.K., Naveen is responsible for overseeing the strategic direction, planning and execution of consulting led IT services business.</b><br><br>
+                    Naveen has more than twenty nine years of experience in Consulting, IT and Process Outsourcing services and has donned multiple sales and delivery leadership roles in Americas and Asia-Pacific regions.<br><br>
+                    Prior to FirstQA Systems, Naveen had held leadership positions in Hewlett Packard, iGATE and Digital Equipment Corporation (DEC). Naveen graduated with a 
+                    Computer Science degree from the University of Poona in theoretical computer science and compiler construction. Naveen is a sought after guest speaker in 
+                    several international seminars and symposiums in Asia-Pacific region.
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center"><a data-dismiss="modal" class="btn btn-dark font-weight-bold pl-4 pr-4" style="color: #fff;">Close</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="Katsuyuki_Kakuta" tabindex="-1" role="dialog" aria-labelledby="Katsuyuki_Kakuta" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title font-weight-bold h4" id="exampleModalLongTitle">Kimitoshi Ishii</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-justify">
+                    <b>As Regional Director for our European operations, Kimitoshi Ishii is responsible to deliver digital transformation and blockchain solutions for business innovation and efficiency for our European customers.</b><br><br>
+                    Kimitoshi Ishii has more than thirty years of experience in Consulting and IT services delivering large 
+                    enterprise solutions for European and Japanese companies at KEL, IBM and Oracle.<br><br>
+                    While at Oracle Europe Middle East and Africa (EMEA) region, he had successfully managed Enterprise Applications solution consulting and
+                    relationship management with global Japanese companies.<br><br>
+                    Kimitoshi Ishii had graduated from Chuo University with BA degree in Science and Engineering Management.
+
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center"><a data-dismiss="modal" class="btn btn-dark font-weight-bold pl-4 pr-4" style="color: #fff;">Close</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+<!--Careers-->
+    <div id="careers" class="container pt-5 mt-5">
+        <div class="row pt-5">
+            <div class="col-12 text-center">
+                <img class="img-fluid" style="max-width: 76px;" src="img/careers.png">
+                <div class="h3 pt-2">Careers</div>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-12  text-justify">
+                As a Consulting led IT Services company, FirstQA Systems implements blockchain solutions and digital transformation projects in
+                manufacturing, retail, financial services in Japan, UK and USA. Our teams leverage skills in business domains, strategy,
+                process optimization and cloud technologies to deliver solutions and services. FirstQA Systems selects and value employees 
+                for their ability to think out of the box, drive to succeed, and passion for delivering superior solutions for our customers. 
+                If you join us, you will be able to experience a set of diverse opportunities to learn and enhance your career. We usually hire 
+                yearlong for the following key positions:
+            </div>
+            <div class="row pb-5">
+                <div class="col-md-4 float-left">
+                    <img class="img-fluid " src="img/aboutus_careers.png">
+                </div>
+                <div class="col-md-8 float-right">
+                    <ul class="pt-5">
+                        <li>
+                            Blockchain Architects and Developers in Hyperledger, Ethereum or R3 Corda platform. Minimum of three years of relevant experience as Blockchain developer in Smart Contracts
+                        </li>
+                        <li>
+                            ServiceNow Developers with experience in one of the solutions such as ITSM, ITOM, ITBM, CSM, HRSD, SecOps and GRC
+                        </li>
+                        <li>
+                            ServiceNow Service Portal developers with experience in portal and application development using AngularJS and Bootstrap
+                        </li>
+                        <li>
+                            Salesforce developers with experience in one of the solutions such as Sales, Service or Marketing Cloud
+                        </li>
+                        <li>
+                            Salesforce Lighting developer with experience in design and development of applications, strong experienced in AngularJS and Bootstrap
+                        </li>
+                        <li>
+                            AngularJS, React or Node.JS developers with experience in NoSQL databases
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
