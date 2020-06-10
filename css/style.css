@@ -219,6 +219,10 @@ div{
   width: 50%  !important;
 }
 
+.navbar{
+  background-color: white !important;
+}
+
   @media screen and (min-width: 992px){
     .desktop-hide{
       display: none !important;
@@ -247,12 +251,8 @@ div{
     width: 100%; 
   }
 
-  .brand>img{
+  .navbar-brand>img{
     width: 150px !important;
-    position: absolute !important;
-    top: 10% !important;
-    left: 25%;
-    text-align: center;
     
   }
 
