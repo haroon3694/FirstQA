@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
-
-
-.navbar-dark .navbar-nav .nav-link 
-{
-   
+.dtimage:hover{
+opacity: 1;
 }
+
+.dtimage{
+  opacity: 0.8;
+  }
+
+  .dtimage1{
+    opacity: 0.8;
+    }
+
+
+.dtimage1:hover{
+ opacity: 1;
+  }
+
+  
 
 .nav-link 
 {
@@ -86,6 +98,7 @@ input#form_name,#form_email,#form_phone,#form_message.form-control{
   color: #fff !important;
   background-color: #BF2342 !important;
 }
+
 
 .nav-pills{
   color: black !important;
@@ -237,8 +250,12 @@ div{
     width: 100%; 
   }
 
-  .navbar-brand>img{
+  .brand>img{
     width: 150px !important;
+    position: absolute !important;
+    top: 10% !important;
+    left: 25%;
+    text-align: center;
     
   }
 
