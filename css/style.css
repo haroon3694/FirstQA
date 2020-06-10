@@ -247,8 +247,12 @@ div{
     width: 100%; 
   }
 
-  .navbar-brand>img{
+  .brand>img{
     width: 150px !important;
+    position: absolute !important;
+    top: 10% !important;
+    left: 25%;
+    text-align: center;
     
   }
 
